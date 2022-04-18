@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birdwatching</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Karma", sans-serif;
+            background-color:DarkSeaGreen
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+        footer{
+            background-color:lightgreen
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+           class="w3-bar-item w3-button">Close Menu</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+        <a href="Birds of NIE.html" onclick="w3_close()" class="w3-bar-item w3-button">NTU-NIE</a>
+        <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+            Bird Sightings <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="Bird Sightings.html#Common Birds" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right"></i>Common Birds</a>
+            <a href="Bird Sightings.html#Uncommon Birds" class="w3-bar-item w3-button">Uncommon Birds</a>
+            <a href="Bird Sightings.html#Rare Birds" class="w3-bar-item w3-button">Rare Birds</a>
+        </div>
+    </nav>
+
+    <div class="w3-top">
+        <div class="w3-lightgreen w3-xlarge" style="max-width:1200px;margin:auto;background-color:lightgreen">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">Bird Sightings</div>
+        </div>
+    </div>
+
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="Common Birds">
+            <h1>Common Birds</h1>
+            <div class="w3-quarter">
+                <img src="images2/Yellow Vented Bulbul best.jpg" alt="Yellow Vented Bulbul best" width="250" height="500">
+                <h3>Yellow Vented Bulbul</h3>
+                <p>A common bird found everywhere in Singapore. The <i>Vent</i> refers to it's <i>butt</i> and can be easily identified by its yellow coloration.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Asian Koel Female.jpg" alt="Asian Koel Female" width="250" height="500">
+                <h3>Asian Koel(Female)</h3>
+                <p>That 'uwu' bird that annoys everyone with it's call. Females are brown unlike the black male counterpart but both share red eyes. I actually don't have a good shot of the a male koel...</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Black Naped Oriole.jpg" alt="Black Naped Oriole" width="250" height="500">
+                <h3>Black-naped Oriole</h3>
+                <p>A common bird found everywhere in Singapore. Easily identified by its bright yellow color and black markings that extend to its <i>nape</i></p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Juvi BN Oriole.jpg" alt="Juvi BN Oriole" width="250" height="500">
+                <h3>A juvenile Black-naped Oriole</h3>
+                <p>The juvenile actually doesn't have the black nape, throwing me off in identification the first time I saw this bird. Yet, there aren't many yellow birds in Singapore.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="images2/Pink Neck Green Pigeon Male.jpg" alt="Pink Neck Green Pigeon Male" width="250" height="300">
+                <h3>Pink Neck Green Pigeon (Male)</h3>
+                <p>A common green bird found everywhere in Singapore. The males have a distinct pink coloration around their neck.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Green Pigeon.jpg" alt="Green Pigeon" width="250" height="300">
+                <h3>Pink Neck Green Pigeon (Female)</h3>
+                <p>The female counterpart lacks the pink coloration as always in the bird kingdom. The completely green coloration would help it stay more camouflaged in the foliage.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Malaysian Pied Fantail.jpg" alt="Malaysian Pied Fantail" width="250" height="300">
+                <h3>Malaysian Pied Fantail</h3>
+                <p>Actually a common bird found in many forested places around Singapore. It's known for it's tail that opens like a fan, hence it's name. Till today, I have yet to capture a good image of it's fantail though:(</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Pin-striped Tit Babbler.jpg" alt="Pin-striped Tit Babbler" width="250" height="300">
+                <h3>Pin-striped Tit Babbler</h3>
+                <p>A small tiny bird found in many bushes. Makes a whole lotta noise and that's how you find them.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-half">
+                <img src="images2/White Collared Kingfisher.jpg" alt="White Collaed Kingfisher" width="250" height="500">
+                <h3>White Collared KingFisher</h3>
+                <p>The most common Kingfisher found in Singapore. It is mostly white and blue. It's name comes from the white 'collar'. This bird is actually a really loud and noisy bird and is mostly heard before seen.</p>
+            </div>
+            <div class="w3-half">
+                <img src="images2/White hen.jpg" alt="White hen" width="250" height="500">
+                <h3>Jungle Fowl</h3>
+                <p>A chicken. This chicken though was white and was therefore interesting enough for me to get a shot of. Reminded me of my white chicken rice.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center" id="Uncommon Birds">
+            <h1>Uncommon Birds</h1>
+            <p>Birds here are either uncommon in general or found in specific places.</p>
+            <div class="w3-quarter">
+                <img src="images2/Oriental Magpie Robin.jpg" alt="Oriental Magpie Robin" width="250" height="500">
+                <h3>Oriental Magpie Robin</h3>
+                <p>I say uncommon, but at specific places, they can be found everywhere. For example, this one was at the Botanic Gardens.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Leaf Winged bulbul.jpg" alt="Leaf Winged bulbul" width="250" height="500">
+                <h3>Leaf Winged Bulbul</h3>
+                <p>Another species of bulbul in Singapore. This one is harder to identify due to it's dull coloration.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Straw Headed Bulbul.jpg" alt="Straw Headed Bulbul" width="250" height="500">
+                <h3>Straw Headed Bulbul</h3>
+                <p>This species of bulbul is a very unique species of bulbul to Singapore in that Singapore is the only place where it is not endangered or extinct. It has a very distinct call that I am not familiar with as I have only seen this once:(</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Imperial Pied Pigeon.jpg" alt="Imperial Pied Pigeon" width="250" height="500">
+                <h3>Imperial Pied Pigeon</h3>
+                <p>A beautiful pigeon in Singapore that are commonly seen as a group.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="images2/Straited Heron2.jpg" alt="Straited Heron2" width="250" height="300">
+                <h3>Straited Heron</h3>
+                <p>A common water bird that can be even be found in the longkangs of Singapore.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Little Egret.jpg" alt="Little Egret" width="250" height="500">
+                <h3>Little Egret</h3>
+                <p>A common water bird that can be found near most water bodies. It can be differentiated from its other egret friends by it's black beak.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Greater Egret.jpg" alt="Greater Egret" width="250" height="500">
+                <h3>Greater? Egret</h3>
+                <p>This egret is too far to be identified by me.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images2/Flowerpecker.jpg" alt="Flowerpecker" width="250" height="500">
+                <h3>Some flowerpecker (female)</h3>
+                <p>The thing about flowerpeckers is: The females all look the same. Only the males are bright and colorful. So this flowerpecker is unidentified.</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-half">
+                <img src="images2/White Crested Laughing Thrust.jpg" alt="White Crested Laughing Thurst" width="250" height="500">
+            </div>
+            <div class="w3-half">
+                <video width="250" height="500" controls>
+                    <source src="images2/Laughing Thrust call.mp4" type="video/mp4" />
+                </video>
+            </div>
+            <h3>White Crested Laughingthrush</h3>
+            <p>Found mainly in Bukit Timah and Bukit Batok parks and reserves. Very distinct white crest but more notable are their calls. I could hear these calls from really far away, making me wonder what sort of commotion was occuring.</p>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center" id="Rare Birds">
+            <h1>Rare Birds</h1>
+            <p>Self-explanatory</p>
+            <div class="w3-third">
+                <img src="images2/Racket Tailed Drongo.jpg" alt="Racket Tailed Drongo" width="250" height="500">
+                <h3>Racket Tailed Drongo</h3>
+                <p>This beautiful bird is known for is distinct tail. Two thin elongated outer tail featers extend from it. I had one flown by my face once but I got too excited and missed it:P</p>
+            </div>
+            <div class="w3-third">
+                <img src="images2/Black Baza.jpg" alt="Black Baza" width="250" height="500">
+                <h3>Black baza</h3>
+                <p>A migrant raptor that commonly visits Singapore. Saw this at Sungei Buloh and was pointed out kindly by an elderly birdwatching couple.</p>
+            </div>
+            <div class="w3-third">
+                <img src="images2/Black Naped Oriole.jpg" alt="Black Naped Oriole" width="250" height="500">
+                <h3>Juvenile Crested goshawk 3</h3>
+                <p>This was taken at Pasir Ris Park. There were an entire group of birdwatchers looking up but my friends and I couldn't see anything. Not until we went round and came back and a kind man pointed it out to us. We didn't bother waiting for it's parents to come back to take an adult shot:P</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-half">
+                <img src="images2/Oriental Honey Buzzard PRP 1.jpg" alt="Oriental Honey Buzzard PRP 1" width="250" height="500" />
+            </div>
+            <div class="w3-half">
+                <img src="images2/Oriental Honey Buzzard PRP 2.jpg" alt="Oriental Honey Buzzard PRP 2" width="250" height="500" />
+            </div>
+            <h3>Oriental Honey Buzzard</h3>
+            <p>This guy came by when we were distractedly looking at a Black Naped Oriole. We jumped and quickly moved to get shots which gave me a nice motion capture of the buzzard taking off. The buzzard continued flying around the vincity but we could only watch it soar from below.</p>
+        </div>
+
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="w3-half">
+                <h7>Photo Credits</h7>
+                <p>Photos are all taken by my own using my own Vortex Diamonback Binoculars and my Samsing S20 FE</p>
+            </div>
+
+            <div class="w3-half">
+                <p>Chong Jie An U2060042L</p>
+                <p>Assignment 2 for HTML</p>
+            </div>
+        </footer>
+
+        <script>
+            // Accordion 
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+</body>
+</html>

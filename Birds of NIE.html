@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Birdwatching</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Karma", sans-serif;
+            background-color:DarkSeaGreen
+        }
+
+        .w3-bar-block .w3-bar-item {
+            padding: 20px
+        }
+        footer{
+            background-color:lightgreen
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+           class="w3-bar-item w3-button">Close Menu</a>
+        <a href="index.html" onclick="w3_close()" class="w3-bar-item w3-button">About</a>
+        <a href="Birds of NIE.html" onclick="w3_close()" class="w3-bar-item w3-button">NTU-NIE</a>
+        <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+            Bird Sightings <i class="fa fa-caret-down"></i>
+        </a>
+        <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+            <a href="Bird Sightings.html#Common Birds" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right"></i>Common Birds</a>
+            <a href="Bird Sightings.html#Uncommon Birds" class="w3-bar-item w3-button">Uncommon Birds</a>
+            <a href="Bird Sightings.html#Rare Birds" class="w3-bar-item w3-button">Rare Birds</a>
+        </div>
+    </nav>
+
+    <div class="w3-top">
+        <div class="w3-lightgreen w3-xlarge" style="max-width:1200px;margin:auto;background-color:lightgreen">
+            <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+            <div class="w3-center w3-padding-16">Birds of NTU-NIE</div>
+        </div>
+    </div>
+
+    <div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+        <!-- First Photo Grid-->
+        <div class="w3-row-padding w3-padding-16 w3-center" id="hall">
+            <h1>Visitors to my hall window</h1>
+            <p>The ledge outside my hall windows somehow appears to be a great resting spot for many passing birds. Often alerted by their calls, the position allows me to take some really good pictures.</p>
+            <div class="w3-quarter">
+                <img src="images1/Yellow Vented Bulbul hall.jpg" alt="Yellow Vented Bulbul hall" width="250" height="500">
+                <h3>Yellow Vented Bulbul</h3>
+                <p>A common bird found everywhere in Singapore. The <i>Vent</i> refers to it's <i>butt</i> and can be easily identified by its yellow coloration.</p>
+            </div>
+            <div class="w3-quarter">
+                <video width="250" height="500" controls>
+                    <source src="images1/Yellow Vented Bulbul Call Hall.mp4" type="video/mp4" />
+                    <source src="images1/Yellow Vented Bulbul Call Hall.ogg" type="video/ogg">
+                </video>
+                <h3>Yellow Vented Bulbul's call'</h3>
+                <p>An uncommon visitor to my hall window. I am usually awoken by its distinct chirping call in the mornings.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/Black Naped Oriole Hall.jpg" alt="Black Naped Oriole Hall" width="250" height="500">
+                <h3>Black-naped Oriole</h3>
+                <p>A common bird found everywhere in Singapore. Easily identified by its bright yellow color and black markings that extend to its <i>nape</i></p>
+            </div>
+            <div class="w3-quarter">
+                <video width="250" height="500" controls>
+                    <source src="images1/Black Naped Oriole Hall Call.mp4" type="video/mp4" />
+                </video>
+                <h3>Black-naped Oriole's call'</h3>
+                <p>Despite it's bright yellow coloration, this bird is often heard before seen due to its distinct melodious call.'</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <h1>Birds Around NIE</h1>
+            <p>Birds around NIE(That I could get a picture of)</p>
+            <div class="w3-quarter">
+                <img src="images1/Asian Glossy Starling.jpg" alt="Asian Glossy Starling" width="250" height="500">
+                <h3>Asian Glossy Starlings</h3>
+                <p>A common small black bird with distinct red eyes. Looks like a smaller Koel and I used to confuse the two before.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/Imperial Pied Pigeons 2.jpg" alt="Imperial Pied Pigeons 2" width="250" height="500">
+                <h3>Imperial Pied Pigeon</h3>
+                <p>A beautiful uncommon visitor to NIE, commonly seen in a group.</p>
+            </div>
+            <div class="w3-quarter">
+                <video width="250" height="500" controls>
+                    <source src="images1/Sunda Pygmy Woodpecker.mp4" type="video/mp4" />
+                </video>
+                <h3>Sunda Pygmy Woodpecker</h3>
+                <p>The smallest woodpecker in Singapore. Looks absolutely adorable and was lucky enough to catch a video of this one pecking.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/Nightjar.jpg" alt="Nightjar" width="250" height="500">
+                <h3>Nightjar</h3>
+                <p>A really rare bird. In fact, I didn't even know it wa a nightjar until looking back on it. Pity it was a rainy day with poor lighting.'</p>
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="images1/BFO NIE 3.jpg" alt="BFO NIE 3" width="270" height="400">
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/BFO 2 NIE 2.jpg" alt="BFO 2 NIE 2" width="250" height="500">
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/BFO NIE.jpg" alt="BFO NIE" width="270" height="500">
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/BFO 2 NIE 3.jpg" alt="BFO 2 NIE 3" width="250" height="500">
+            </div>
+            <h3>Buffy Fish owls</h3>
+            <p>My first owl sightings in Singapore! In broad daylight too! And two of them! They sat at that tree for a whole week allowing me to come to school with my binoculars and take some great shots! These are my best shots till today!</p>
+        </div>
+
+        <div class="w3-row-padding w3-padding-16 w3-center">
+            <div class="w3-quarter">
+                <img src="images1/Baby Bulbul.jpg" alt="Baby Bulbul" width="250" height="500">
+                <h3>A Baby BulBul</h3>
+                <p>A baby bulbul sighting in NIE! Absolutely estatic for this encounter and I could follow the bulbul's growth throughout the week.(as best as i could)'</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/Bulbul Nest.jpg" alt="Bulbul Nest" width="250" height="500">
+                <h3>Bulbul's Nest'</h3>
+                <p>The baby bulbul had emerged from its nest as it had gotten too big and was running around, learning to fly.</p>
+            </div>
+            <div class="w3-quarter">
+                <img src="images1/Baby Bulbul 2.jpg" alt="Baby Bulbul 2" width="250" height="500">
+                <h3>Baby Bulbul running around</h3>
+                <p>It ended up running around a lot in the open. Was really concern as it was amzing how so many people simply walked by it without noticing that they could have kicked or stepped on the poor baby. Said poor baby clearly didn't care.'</p>
+            </div>
+            <div class="w3-quarter">
+                <video width="250" height="500" controls>
+                    <source src="images1/Bulbul Feeding 4.mp4" type="video/mp4" />
+                </video>
+                <h3>Feeding time!</h3>
+                <p>It's parents frequently came back to feed it and I was able to catch it by waiting. The baby made a lot of noise to alert the parent of it's position. This baby took weeks to finally fly off on it's own...talk about smooching off it's parents...</p>
+            </div>
+        </div>
+
+        <footer class="w3-row-padding w3-padding-32">
+            <div class="w3-half">
+                <h7>Photo Credits</h7>
+                <p>Photos are all taken by my own using my own Vortex Diamonback Binoculars and my Samsung S20 FE</p>
+            </div>
+
+            <div class="w3-half">
+                <p>Chong Jie An U2060042L</p>
+                <p>Assignment 2 for HTML</p>
+            </div>
+        </footer>
+
+        <script>
+            // Accordion 
+            function myAccFunc() {
+                var x = document.getElementById("demoAcc");
+                if (x.className.indexOf("w3-show") == -1) {
+                    x.className += " w3-show";
+                } else {
+                    x.className = x.className.replace(" w3-show", "");
+                }
+            }
+
+            // Script to open and close sidebar
+            function w3_open() {
+                document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+                document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+</body>
+</html>
